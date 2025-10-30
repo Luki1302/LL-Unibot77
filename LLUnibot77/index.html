@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <base target="_blank" />
+    <title>HGKB - Grid</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@zxing/library@latest"></script>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="webcam">
+        <video
+          id="webcam_canvas"
+          playsinline
+          autoplay
+          style="display: none"
+        ></video>
+        <canvas id="out_canvas"></canvas>
+        <canvas id="out_canvas_colors"></canvas>
+      </div>
+      <div id="visual">
+        <div id="countdown-overlay">
+          <div id="countdown-number">5</div>
+        </div>
+        <div class="gradient-background"></div>
+        <div class="svg-wrapper">
+          <object
+            id="svg-electric-circuit"
+            data="assets/svg/SVG-Export-4.svg"
+          ></object>
+        </div>
+        <div class="grid">
+          <div id="cross-green-x" class="cross-line cross-x"></div>
+          <div id="cross-green-y" class="cross-line cross-y"></div>
+          <div id="cross-violet-x" class="cross-line cross-x"></div>
+          <div id="cross-violet-y" class="cross-line cross-y"></div>
+          <div class="grid-item-1">
+            <p id="grid-item-1-consult-text">
+              LL Unisoft77<br />Sans Serif<span
+                style="margin-left: calc(1em / 24)"
+              ></span
+              >/<span style="margin-left: calc(1em / 24)"></span
+              >Display<br />Geometric<br />Lineto Typefaces<br />www.lineto.com<br />2023
+              Specimen
+            </p>
+            <p id="grid-item-1-text">A</p>
+          </div>
+          <div class="grid-item-2">
+            <div class="grid-item-2-1">
+              <p id="grid-item-2-1-consult-text">
+                OpenType Features<br />Variable Font<br />Thin<span
+                  style="margin-left: calc(1em / 8)"
+                ></span
+                >&#x2192;<span style="margin-left: calc(1em / 8)"></span
+                >Black<br />Cond<span style="margin-left: calc(1em / 8)"></span
+                >&#x2192;<span style="margin-left: calc(1em / 8)"></span
+                >Expanded<br />Responsive
+              </p>
+              <div class="grid-item-2-3"></div>
+              <div class="grid-item-2-4">
+                <div class="gradient"></div>
+                <div class="grid-lines-container">
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div
+                    class="grid-lines-container-square grid-lines-container-square-last"
+                  ></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div
+                    class="grid-lines-container-square grid-lines-container-square-last"
+                  ></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div
+                    class="grid-lines-container-square grid-lines-container-square-last"
+                  ></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div
+                    class="grid-lines-container-square grid-lines-container-square-last"
+                  ></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div
+                    class="grid-lines-container-square grid-lines-container-square-last"
+                  ></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div
+                    class="grid-lines-container-square grid-lines-container-square-last"
+                  ></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div
+                    class="grid-lines-container-square grid-lines-container-square-last"
+                  ></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div class="grid-lines-container-square"></div>
+                  <div
+                    class="grid-lines-container-square grid-lines-container-square-last"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item-2-2">
+              <div id="circle1">
+                <div class="divider2">
+                  <div class="divider3"></div>
+                </div>
+                <div class="divider">
+                  <div class="divider4"></div>
+                </div>
+              </div>
+              <div id="grid-item-2-2-text"><p>&#x2192;</p></div>
+              <div class="grid-item-2-2-consult-text">
+                <div id="grid-item-2-2-consult-text-1">
+                  <p>
+                    X<span style="margin-bottom: calc(1em / 8)"></span>–<span
+                      style="margin-bottom: calc(1em / 8)"
+                    ></span
+                    >Position<br />Y<span
+                      style="margin-bottom: calc(1em / 8)"
+                    ></span
+                    >–<span style="margin-bottom: calc(1em / 8)"></span
+                    >Position<br />Dist. Center<br />Dist. Corners<br />
+                    Dist. Enemy<br />Time
+                  </p>
+                </div>
+                <div id="grid-item-2-2-consult-text-2">
+                  <p>
+                    71.949<br />64.267<br />92.567<br />79.581<br />87.206<br />
+                    64.158
+                  </p>
+                </div>
+                <div id="grid-item-2-2-consult-text-3">
+                  <p>
+                    88.287<br />90.012<br />41.208<br />76.457<br />
+                    67.052<br />70.282
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item-3">
+            <div class="grid-item-3-1">
+              <div id="grid-item-3-1-consult-text-3">
+                <p>
+                  Designed by<br />Laurel Biolley &<br />Lukas Hecht<br />Impulse
+                  Workshop<br />HS 25<span
+                    style="margin-bottom: calc(1em / 24)"
+                  ></span
+                  >/<span style="margin-bottom: calc(1em / 24)"></span
+                  >26<br /><span class="copyright">©</span>
+                  Oct 2025
+                </p>
+              </div>
+              <div id="grid-item-3-1-consult-text-4">
+                <p>
+                  BA Visual<br />Communication<br />and Digital<br />Spaces<br />Academy
+                  of<br />Art and Design<br />Basel FHNW
+                </p>
+              </div>
+              <div id="grid-item-3-1-consult-text-1">
+                <p>
+                  Robo 1<br />Stamina<span
+                    style="margin-bottom: calc(1em / 24)"
+                  ></span
+                  >: 65<br />Special Move<span
+                    style="margin-bottom: calc(1em / 24)"
+                  ></span
+                  >: 75<br />Speed<span
+                    style="margin-bottom: calc(1em / 24)"
+                  ></span
+                  >: 80<br />Charisma<span
+                    style="margin-bottom: calc(1em / 24)"
+                  ></span
+                  >: 60<br />
+                  Attack<span style="margin-bottom: calc(1em / 24)"></span>:
+                  85<br />Defense<span
+                    style="margin-bottom: calc(1em / 24)"
+                  ></span
+                  >: 70
+                </p>
+              </div>
+              <div id="grid-item-3-1-consult-text-2">
+                <p>
+                  Robo 2<br />Stamina<span
+                    style="margin-bottom: calc(1em / 24)"
+                  ></span
+                  >: 65<br />Special Move<span
+                    style="margin-bottom: calc(1em / 24)"
+                  ></span
+                  >: 90<br />Speed<span
+                    style="margin-bottom: calc(1em / 24)"
+                  ></span
+                  >: 85<br />Charisma<span
+                    style="margin-bottom: calc(1em / 24)"
+                  ></span
+                  >: 45<br />
+                  Attack<span style="margin-bottom: calc(1em / 24)"></span>:
+                  80<br />Defense<span
+                    style="margin-bottom: calc(1em / 24)"
+                  ></span
+                  >: 50
+                </p>
+              </div>
+            </div>
+            <div class="grid-item-3-2">
+              <div id="title-graph">
+                <p>Proximity to middle</p>
+              </div>
+              <div class="graph-container">
+                <canvas id="tracking-chart"></canvas>
+              </div>
+              <div class="slidecontainer">
+                <div class="slide-group">
+                  <label class="slide-label">Weight</label>
+                  <div class="slidewithvalue">
+                    <div class="slide-bar">
+                      <div
+                        class="slide-fill slide-fill-green"
+                        id="slide-weight-green"
+                      ></div>
+                    </div>
+                    <div class="slide-value" id="value-weight-green">28</div>
+                  </div>
+                  <div class="slidewithvalue">
+                    <div class="slide-bar">
+                      <div
+                        class="slide-fill slide-fill-violet"
+                        id="slide-weight-violet"
+                      ></div>
+                    </div>
+                    <div class="slide-value" id="value-weight-violet">28</div>
+                  </div>
+                </div>
+                <div class="slide-group">
+                  <label class="slide-label">Slanted</label>
+                  <div class="slidewithvalue">
+                    <div class="slide-bar">
+                      <div
+                        class="slide-fill slide-fill-green"
+                        id="slide-slanted-green"
+                      ></div>
+                    </div>
+                    <div class="slide-value" id="value-slanted-green">28</div>
+                  </div>
+                  <div class="slidewithvalue">
+                    <div class="slide-bar">
+                      <div
+                        class="slide-fill slide-fill-violet"
+                        id="slide-slanted-violet"
+                      ></div>
+                    </div>
+                    <div class="slide-value" id="value-slanted-violet">28</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item-4">
+            <div class="grid-item-4-1">
+              <div class="grid-item-4-1-1">
+                <div class="stroke-border">
+                  <div id="circle2"></div>
+                </div>
+              </div>
+              <div class="grid-item-4-1-2">
+                <p id="grid-item-4-3-text">π</p>
+              </div>
+            </div>
+            <div class="grid-item-4-2"></div>
+            <div class="grid-item-4-3">
+              <div class="gradient-2"></div>
+              <div class="grid-lines-container-dashed">
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square"></div>
+                <div class="grid-lines-container-dashed-square-last"></div>
+                <div class="grid-lines-container-dashed-square-last"></div>
+                <div class="grid-lines-container-dashed-square-last"></div>
+                <div class="grid-lines-container-dashed-square-last"></div>
+                <div class="grid-lines-container-dashed-square-last"></div>
+                <div class="grid-lines-container-dashed-square-last"></div>
+                <div class="grid-lines-container-dashed-square-last"></div>
+                <div class="grid-lines-container-dashed-square-last"></div>
+                <div class="grid-lines-container-dashed-square-last"></div>
+                <div class="grid-lines-container-dashed-square-last"></div>
+                <div class="grid-lines-container-dashed-square-last"></div>
+                <div class="grid-lines-container-dashed-square-last"></div>
+                <div class="grid-lines-container-dashed-square-last"></div>
+                <div class="grid-lines-container-dashed-square-last"></div>
+                <div class="grid-lines-container-dashed-square-last"></div>
+                <div class="grid-lines-container-dashed-square-last"></div>
+              </div>
+              <div class="grid-item-4-3-1">
+                <p class="grid-item-4-3-1">
+                  <span class="line" id="line-1" style="--offset: 1vh"
+                    >Dimensions<span style="margin-left: calc(1em / 24)"></span
+                    >: 95<span style="margin-left: calc(1em / 8)"></span>x<span
+                      style="margin-left: calc(1em / 8)"
+                    ></span
+                    >108<span style="margin-left: calc(1em / 8)"></span>x<span
+                      style="margin-left: calc(1em / 8)"
+                    ></span
+                    >72<span style="margin-left: calc(1em / 8)"></span>mm</span
+                  >
+                  <span class="line" id="line-2" style="--offset: 10vh"
+                    >Battery<span style="margin-left: calc(1em / 24)"></span>:
+                    Alkaline, 3<span style="margin-left: calc(1em / 8)"></span
+                    >AA</span
+                  >
+                  <span class="line" id="line-3" style="--offset: -3.2vh"
+                    >Material<span style="margin-left: calc(1em / 24)"></span>:
+                    PLA plastic, 3D-printed</span
+                  >
+                  <span class="line" id="line-4" style="--offset: 6vh"
+                    >Processor<span style="margin-left: calc(1em / 24)"></span>:
+                    Trinket<span style="margin-left: calc(1em / 8)"></span
+                    >–<span style="margin-left: calc(1em / 8)"></span>MO
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="grid-item-4-4">
+              <div id="grid-item-4-4-text"><p>&#x2192;</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/math.min.js"></script>
+    <script src="assets/lz-string.min.js"></script>
+    <script type="module" src="assets/video_process.js" async></script>
+    <script type="module" src="main.js" async></script>
+  </body>
+</html>
